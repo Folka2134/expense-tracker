@@ -1,11 +1,15 @@
-import Header from "./components/header.component"
+import {Header} from "./components/header.component"
+import {Balance} from "./components/balance.component"
 
 import './App.css';
 
-function App() {
+const App = () =>  {
   return (
     <div>
       <Header/>
+      <div className="container">
+        <Balance />
+      </div>
     </div>
   );
 }
