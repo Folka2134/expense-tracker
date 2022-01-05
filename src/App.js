@@ -4,11 +4,13 @@ import {IncomeExpenses} from "./components/incomeExpenses.component"
 import {TransationList} from "./components/transationList.component"
 import {AddTransaction} from "./components/addTransaction.component"
 
+import { GlobalProvider } from "./context/GlobalState"
+
 import './App.css';
 
 const App = () =>  {
   return (
-    <div>
+    <GlobalProvider>
       <Header/>
       <div className="container">
         <Balance />
@@ -16,7 +18,7 @@ const App = () =>  {
         <TransationList />
         <AddTransaction />
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
