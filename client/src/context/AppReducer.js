@@ -11,7 +11,7 @@ export const AppReducer = (state, action) => {
         case "DELETE_TRANSACTION": 
             return {
                 ...state,
-                transactions: state.transactions.filter((transaction) => transaction.id !== action.payload)
+                transactions: state.transactions.filter((transaction) => transaction._id !== action.payload)
             }
         //Add transaction by spreading current state and adding payload
         case "ADD_TRANSACTION": 
