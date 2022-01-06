@@ -14,6 +14,9 @@ connectDB()
 
 app.use(express.json())
 app.use('/api/v1/transactions', transactions)
+if (process.env.NODE_ENV === 'development'){
+    app.use(morgan('dev'))
+}
 
 
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on PORT:${PORT}`.yellow.bold));
