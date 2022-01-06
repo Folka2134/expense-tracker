@@ -6,12 +6,12 @@ exports.getTransactions = (req, res, next) => {
 
 // Add transactions
 // @route POST /api/v1/transactions
-exports.getTransactions = (req, res, next) => {
+exports.addTransactions = (req, res, next) => {
     res.send('POST transactions')
 }
 
 // Delete transactions
 // @route DELETE /api/v1/transactions/:id
-exports.getTransactions = (req, res, next) => {
+exports.deleteTransactions = (req, res, next) => {
     res.send('DELETE transactions')
 }
