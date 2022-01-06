@@ -5,6 +5,7 @@ const morgan = require('morgan')
 
 const connectDB = require('./config/db')
 const transactions = require('./routes/transactions')
+
 dotenv.config({ path: './config/config.env' })
 const PORT = process.env.PORT || 5000
 
