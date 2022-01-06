@@ -51,6 +51,9 @@ export const GlobalProvider = ({ children }) => {
     // Provide state and functions to other components (children)
     <GlobalContext.Provider value={{
         transactions: state.transactions,
+        error: state.error,
+        loading: state.loading,
+        getTransactions,
         deleteTransaction,
         addTransaction
     }}>
